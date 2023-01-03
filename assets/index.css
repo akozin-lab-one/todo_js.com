@@ -1,0 +1,122 @@
+:root {
+    --primary: #5d83b3;
+    --white: #ffffff;
+    --danger: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: var(--primary);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todos-box {
+    background-color: var(--white);
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.todos-input {
+    padding: 20px 50px;
+}
+
+.tasks-input {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #000000;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.btn-list {
+    display: flex;
+}
+
+.filter-div {
+    margin: 10px 10px 10px 65px;
+}
+
+.all-filter {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+span.active {
+    color: var(--primary);
+}
+
+.pend-filter {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.completed-filter {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.del-btn {
+    width: 70px;
+    height: 30px;
+    outline: none;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.todos {
+    padding: 5px 15px;
+    margin: 10px 0;
+}
+
+.todos-tasks label {
+    display: flex;
+    text-align: center;
+}
+
+.todos-tasks p {
+    margin-left: 10px;
+}
+
+.todos-tasks p.active {
+    text-decoration: line-through;
+}
+
+.todos-list {
+    list-style: none;
+}
+
+.todos-item {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.icon-box {
+    margin-left: 10px;
+}
+
+.fa-trash-can {
+    color: var(--danger);
+}
+
+.empty-task {
+    text-align: center;
+    color: var(--danger);
+}
